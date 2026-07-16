@@ -14,8 +14,13 @@ h1 {
 
 #layout-container {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1.5fr 2fr;
 }
+
+#main-component {
+    background-color: rgb(132, 187, 206);
+}
+
 
 li {
     flex: 1;
@@ -30,6 +35,10 @@ ul li {
     padding: 20px;
     font-family: "Monaco", monospace;
     font-size: 1rem;
+}
+
+ol li {
+    font-family: "Monaco", monospace;
 }
 
 ul li a:hover {

@@ -1,0 +1,42 @@
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    font-family: "Monaco", monospace;
+    font-size: 30px;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+}
+
+#layout-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+li {
+    flex: 1;
+    list-style-type: none;
+    font-size: 1rem;
+}
+
+ul li {
+    display: block;
+    text-align: center;
+    color: black;
+    padding: 20px;
+    font-family: "Monaco", monospace;
+    font-size: 1rem;
+}
+
+ul li a:hover {
+    background-color: rgb(166, 217, 235);
+}
+
+p {
+    font-family: "Monaco", monospace;
+    font-size: 15px;
+}

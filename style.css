@@ -118,7 +118,9 @@ section {
 .project-card,
 .profile-card,
 .stat-card,
-.skill-card {
+.skill-card,
+.preview-card,
+.fact-card {
     background: linear-gradient(145deg, rgba(255,255,255,0.16), rgba(255,255,255,0.06));
     border: 1px solid rgba(255,255,255,0.16);
     border-radius: 24px;
@@ -225,12 +227,58 @@ h1 {
     display: block;
     margin: 0 auto 1rem;
     box-shadow: 0 10px 30px rgba(0,0,0,0.24);
+    position: relative;
+    z-index: 2;
+}
+
+.profile-frame {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.profile-frame::before,
+.profile-frame::after {
+    content: "✦";
+    position: absolute;
+    font-size: 1.4rem;
+    color: var(--accent-2);
+    animation: spin 6s linear infinite;
+}
+
+.profile-frame::before {
+    top: -0.7rem;
+    left: -0.7rem;
+}
+
+.profile-frame::after {
+    bottom: -0.7rem;
+    right: -0.7rem;
+    animation-direction: reverse;
 }
 
 .timeline {
     position: relative;
     margin-top: 1.2rem;
     padding-left: 1rem;
+}
+
+.facts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.fact-card {
+    text-align: center;
+}
+
+.fact-icon {
+    font-size: 1.8rem;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    animation: pulse 1.8s infinite;
 }
 
 .timeline::before {
@@ -290,9 +338,31 @@ h1 {
     list-style: none;
     padding: 0;
     margin: 1rem 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
-.contact-list a,
+.contact-chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, rgba(255,255,255,0.2), rgba(255,255,255,0.08));
+    border: 1px solid rgba(255,255,255,0.18);
+    color: var(--accent-2);
+    font-size: 1.5rem;
+    text-decoration: none;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+    transition: transform 0.2s ease;
+}
+
+.contact-chip:hover {
+    transform: translateY(-4px) scale(1.04);
+}
+
 .site-footer a {
     color: var(--accent-2);
     text-decoration: none;
@@ -310,12 +380,35 @@ h1 {
     to { transform: translateY(0); opacity: 1; }
 }
 
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.14); }
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.preview-card {
+    margin-top: 1rem;
+}
+
+.preview-link {
+    display: inline-block;
+    margin-top: 0.7rem;
+    color: var(--accent-2);
+    text-decoration: none;
+    font-weight: 600;
+}
+
 @media (max-width: 760px) {
     .hero,
     .about-grid,
     .project-grid,
     .stats-grid,
-    .skills-grid {
+    .skills-grid,
+    .facts-grid {
         grid-template-columns: 1fr;
     }
 }

@@ -1,42 +1,60 @@
-<!DOCTYPE HTML>
-<html lang="us">
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Tiffany Mulwa Portfolio</title>
-        <link rel="stylesheet" href="/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tiffany Mulwa | About</title>
+        <link rel="stylesheet" href="../style.css">
     </head>
     <body>
-        <header>
-            <ul class="navbar">
-                <li><a href="home.html">Home</a></li>
-                <li><span>About Me</span></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+        <header class="site-header">
+            <nav class="navbar">
+                <a class="nav-link" href="home.html">Home</a>
+                <a class="nav-link active" href="aboutme.html">About</a>
+                <a class="nav-link" href="skills.html">Skills</a>
+                <a class="nav-link" href="projects.html">Projects</a>
+                <a class="nav-link" href="contact.html">Contact</a>
+            </nav>
         </header>
 
-        <h1 class="great-vibes-regular">I'm Tiffany.</h1>
+        <main>
+            <section class="section-card reveal">
+                <div class="about-grid">
+                    <div class="profile-card">
+                        <img class="profile-image" src="../resources/IMG_4642.jpeg" alt="Portrait of Tiffany Mulwa">
+                    </div>
+                    <div class="profile-card">
+                        <p class="eyebrow">About me</p>
+                        <h1>I’m Tiffany Mulwa</h1>
+                        <p class="lead">I am a software engineer with a strong interest in building thoughtful, efficient tools and solving problems with clean code.</p>
+                        <p class="lead">My background in computer science has helped me grow comfortable working across web development, programming fundamentals, and practical application design.</p>
+                    </div>
+                </div>
+            </section>
 
-        <div id="layout-container">
-            <aside class="main-component">
-                <img src="/resources/IMG_4642.jpeg" alt="Image of Tiffany" width="415" height="550"/>
-            </aside>
+            <section class="section-card reveal">
+                <h2>My Journey</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h3>High School</h3>
+                        <p>Built a strong foundation in curiosity, discipline, and problem-solving while developing an interest in technology and analytical thinking.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>A-Levels</h3>
+                        <p>Strengthened my academic focus and deepened my interest in mathematics and scientific thinking, which shaped my path into computing.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>University</h3>
+                        <p>Expanded my software engineering skills through programming, system design, and project-based learning, leading to the development of real-world applications.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
 
-            <main class="main-component">
-                <h2>About myself</h2>
-                <p>Pursuing an Integrated Masters in Computer Science from University of Nottingham.</p>
-                <p>Skills:</p>
+        <footer class="site-footer">
+            <p>Reach out at <a href="mailto:tmulwa01@gmail.com">tmulwa01@gmail.com</a></p>
+        </footer>
 
-                <ol>
-                    <li>Python</li>
-                    <li>Java</li>
-                    <li>C</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                </ol>
-            </main>
-        </div>
-        
+        <script src="../script.js"></script>
     </body>
 </html>

@@ -1,30 +1,67 @@
-<!DOCTYPE HTML>
-<html lang="us">
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Tiffany Mulwa Portfolio</title>
-        <link rel="stylesheet" href="/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tiffany Mulwa | Portfolio</title>
+        <link rel="stylesheet" href="../style.css">
     </head>
     <body>
-        <header>
-            <ul class="navbar">
-                <li><span>Home</span></li>
-                <li><a href="aboutme.html">About Me</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+        <header class="site-header">
+            <nav class="navbar">
+                <a class="nav-link active" href="home.html">Home</a>
+                <a class="nav-link" href="aboutme.html">About</a>
+                <a class="nav-link" href="skills.html">Skills</a>
+                <a class="nav-link" href="projects.html">Projects</a>
+                <a class="nav-link" href="contact.html">Contact</a>
+            </nav>
         </header>
 
-        <h1 class="great-vibes-regular">Hi. I'm Tiffany.</h1>
+        <main>
+            <section class="hero reveal">
+                <div class="hero-content">
+                    <p class="eyebrow">Software Engineer</p>
+                    <h1>Tiffany Mulwa</h1>
+                    <p class="lead">I build practical software with a strong focus on clarity, problem-solving, and polished user experiences.</p>
+                    <div class="hero-actions">
+                        <a class="button primary" href="projects.html">See my projects</a>
+                        <a class="button secondary" href="contact.html">Get in touch</a>
+                    </div>
+                </div>
 
-        <div id="layout-container">
-            <main class="main-component">
-                <p>I am a Computer Science Undergraduate passionate about coding and cybersecurity.</p>
-            </main>
-        </div>
+                <div class="card">
+                    <h2>Quick Snapshot</h2>
+                    <ul class="skills-list">
+                        <li>Algorithms</li>
+                        <li>Data Structures</li>
+                        <li>UI Design</li>
+                        <li>Software Development</li>
+                    </ul>
+                </div>
+            </section>
 
-        <footer>
-            <p>Tiffany Mulwa, 2026.</p>
+            <section class="section-card reveal">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">2</div>
+                        <p>Completed projects</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">6+</div>
+                        <p>Programming languages/tools</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">100%</div>
+                        <p>Curious and growing</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>Email: <a href="mailto:tmulwa01@gmail.com">tmulwa01@gmail.com</a> | Phone: <a href="tel:+254713599898">0713599898</a></p>
         </footer>
+
+        <script src="../script.js"></script>
     </body>
 </html>

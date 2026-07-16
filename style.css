@@ -21,7 +21,6 @@ h1 {
     background-color: rgb(132, 187, 206);
 }
 
-
 li {
     flex: 1;
     list-style-type: none;
@@ -48,4 +47,8 @@ ul li a:hover {
 p {
     font-family: "Monaco", monospace;
     font-size: 15px;
+}
+
+img {
+    padding: 20px;
 }

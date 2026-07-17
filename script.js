@@ -19,3 +19,12 @@ navLinks.forEach((link) => {
     link.classList.add('active');
   }
 });
+
+const skillFills = document.querySelectorAll('.skill-fill');
+
+skillFills.forEach((fill, index) => {
+  const width = fill.getAttribute('data-width');
+  setTimeout(() => {
+    fill.style.width = `${width}%`;
+  }, 120 * index);
+});

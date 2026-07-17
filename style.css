@@ -319,6 +319,37 @@ h1 {
     display: block;
 }
 
+.project-hero {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    background: rgba(255,255,255,0.08);
+    margin-bottom: 1rem;
+}
+
+.skill-meter {
+    margin: 0.8rem 0 0.3rem;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 10px;
+    background: rgba(255,255,255,0.14);
+    border-radius: 999px;
+    overflow: hidden;
+    margin-top: 0.35rem;
+}
+
+.skill-fill {
+    height: 100%;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    width: 0;
+    transition: width 1.2s ease;
+}
+
 .tag-list {
     display: flex;
     flex-wrap: wrap;
